@@ -47,6 +47,9 @@ console.log(frozen.name) ;
 */
 
 
+/*
+=====================================
+// hoisting
 
 console.log(a) ;  // undefined because a is hoisted
 var a = 20 ;
@@ -58,3 +61,24 @@ function hello() {
 
 console.log(b); // reference err (TDZ)  
 let b = 40 ;
+
+===================================
+*/
+
+
+
+
+//prototype design
+function vehicle(type){
+    this.type = type ;
+}
+
+vehicle.prototype.describe = function() {
+    console.log(`This is a ${this.type}`) ;
+}
+
+const car = new vehicle("car") ;
+const bike = new vehicle("bike") ;
+
+car.describe() ;
+bike.describe() ;
