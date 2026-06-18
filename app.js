@@ -45,3 +45,16 @@ console.log(frozen.name) ;
 
  =======================================
 */
+
+
+
+console.log(a) ;  // undefined because a is hoisted
+var a = 20 ;
+
+hello() ; // works fine
+function hello() {
+    console.log("say hi!") ;
+}
+
+console.log(b); // reference err (TDZ)  
+let b = 40 ;
