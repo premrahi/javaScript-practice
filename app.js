@@ -1,6 +1,6 @@
-
-// =======================================
-// generator function
+/*
+ =======================================
+ // generator function
 
 
 function* generator() {
@@ -19,4 +19,29 @@ console.log(gen.next().value)
 console.log(gen.next().value)
 console.log(gen.next().done)
 
-// =======================================
+
+
+ =======================================
+*/
+
+/*
+ =======================================
+
+ // const vs object.freeze()
+
+const obj = {name:"prem" , address: {city:"delhi"}} ;
+console.log(obj.name) ;
+obj.name = "aalu" ; // allowed
+console.log(obj.name) ;
+
+const frozen = Object.freeze({
+    name:"prem"
+})
+
+console.log(frozen.name) ;
+frozen.name= "gobi" //not allowed (it will be ignored silently)
+console.log(frozen.name) ;
+
+
+ =======================================
+*/
