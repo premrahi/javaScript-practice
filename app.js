@@ -68,6 +68,8 @@ let b = 40 ;
 
 
 
+/*
+=====================================
 //prototype design
 function vehicle(type){
     this.type = type ;
@@ -82,3 +84,14 @@ const bike = new vehicle("bike") ;
 
 car.describe() ;
 bike.describe() ;
+
+
+===================================
+*/
+
+//temporal dead zone
+{
+  console.log(x); // ReferenceError - TDZ
+  let x = 5;
+  console.log(x); // 5 - TDZ is over
+}
